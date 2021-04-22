@@ -10,7 +10,7 @@ const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/all.json?'
 class LatestMovieReviewsContainer extends Component {
 
     state = {
-        reviews: ''
+        reviews: []
     }
 
     componentDidMount() {
@@ -23,6 +23,7 @@ class LatestMovieReviewsContainer extends Component {
         return (
             <div className="latest-movie-reviews">
                 Test LMR
+                <MovieReviews />
             </div>
         )
     }
